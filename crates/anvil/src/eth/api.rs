@@ -1312,7 +1312,9 @@ impl EthApi {
         let mut response = FeeHistory {
             oldest_block: U256::from(lowest),
             base_fee_per_gas: Vec::new(),
+            base_fee_per_blob_gas: Vec::new(),
             gas_used_ratio: Vec::new(),
+            blob_gas_used_ratio: vec::new(),
             reward: Some(Default::default()),
         };
 
